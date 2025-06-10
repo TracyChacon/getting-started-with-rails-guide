@@ -2,6 +2,18 @@
 
 This project is a result of following the official Ruby on Rails Guides tutorial. This repository tracks my progress through the official Ruby on Rails Guides tutorial, covering fundamental Rails concepts.
 
+The [Getting Started with Rails Tutorial](https://guides.rubyonrails.org/getting_started.html) has the below learning objectives:
+
+- How to install Rails, create a new Rails application, and connect your application to a database.
+
+- The general layout of a Rails application.
+
+- The basic principles of MVC (Model, View, Controller) and RESTful design.
+
+- How to quickly generate the starting pieces of a Rails application.
+
+- How to deploy your app to production using Kamal.
+
 ## Technologies Used
 
 - **Ruby:** 3.2.8
