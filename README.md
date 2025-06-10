@@ -1,24 +1,8 @@
-# README
+# My Rails Tutorial Project
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This project is a result of following the official Ruby on Rails Guides tutorial.
 
-Things you may want to cover:
+## License
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.
+For the full license text, see [LICENSE.md](https://creativecommons.org/licenses/by-sa/4.0/).
