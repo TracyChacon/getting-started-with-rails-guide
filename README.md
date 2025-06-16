@@ -60,6 +60,12 @@ To get this project up and running locally, follow these steps:
 6.  **Access the Application:**
     Open your web browser and navigate to `http://localhost:3000`.
 
+## Challeges/Learning
+
+My first challenge embarking on this Rails tutorial was the Ruby language itself. While I have prior experience with C, C++, Python, and JavaScript, understanding Ruby's syntax and idiomatic expressions presented a new hurdle, especially when coupled with the intricacies of Rails.
+
+To address this, I undertook several preparatory steps. I extensively consulted the [official Ruby Documentation](https://www.ruby-lang.org/en/documentation/) to grasp core concepts and worked through the ["Ruby in Twenty Minutes"](https://www.ruby-lang.org/en/documentation/quickstart/) guide to gain a foundational understanding. Additionally, I joined [Exercism](https://exercism.org/tracks/ruby) and began practicing Ruby exercises. This platform appealed to me as a fun and effective way to reinforce my learning; I had already explored it prior to a community recommendation. While "The Odin Project" was also suggested, I ultimately chose Exercism due to my prior familiarity and its interactive learning approach.
+
 ## Credits and Acknowledgements
 
 This project is based on and follows the official [Ruby on Rails Guides: Getting Started with Rails](https://guides.rubyonrails.org/getting_started.html) tutorial.
