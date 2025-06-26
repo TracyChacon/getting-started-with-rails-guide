@@ -66,8 +66,39 @@ My first challenge embarking on this Rails tutorial was the Ruby language itself
 
 To address this, I undertook several preparatory steps. I extensively consulted the [official Ruby Documentation](https://www.ruby-lang.org/en/documentation/) to grasp core concepts and worked through the ["Ruby in Twenty Minutes"](https://www.ruby-lang.org/en/documentation/quickstart/) guide to gain a foundational understanding. Additionally, I joined [Exercism](https://exercism.org/tracks/ruby) and began practicing Ruby exercises. This platform appealed to me as a fun and effective way to reinforce my learning; I had already explored it prior to a community recommendation. While "The Odin Project" was also suggested, I ultimately chose Exercism due to my prior familiarity and its interactive learning approach.
 
+7. Acitive Record Model Basics
+
+This forms a critical part of a Rails application, enabling robust data management and interaction with the backend database and estblished the foundational knowledge of Rails Active Record models, which serve as the object-relational mapping (ORM) layer for interacting with the database. Key takeaways include:
+
+- **Model Definition:** Understanding that `app/models/product.rb` (e.g., `class Product < ApplicationRecord; end`) defines a model, and Rails automatically infers database columns and types.
+- **Dynamic Attribute Generation:** How Rails queries the database (e.g., `Product.column_names`) to dynamically generate attributes for model instances, eliminating boilerplate code.
+- **Creating Records:**
+  - **`Product.new`:** Instantiating a new model instance in memory.
+  - **`#save`:** Persisting an in-memory instance to the database, triggering an `INSERT` SQL query and populating `id`, `created_at`, and `updated_at` timestamps.
+  - **`Product.create`:** A convenient class method to instantiate and save a record in a single step.
+- **Querying Records:**
+  - **`Product.all`:** Retrieving all records from the corresponding database table, returning an `ActiveRecord::Relation` object.
+  - **`Product.where`:** Filtering records based on specific column values, also returning an `ActiveRecord::Relation`.
+  - **`Product.order`:** Sorting query results (e.g., `name: :asc`).
+  - **`Product.find(id)`:** Retrieving a single record by its primary key (`id`).
+- **Updating Records:**
+  - **`#update`:** Updating attributes and saving changes to the database in one go, triggering an `UPDATE` SQL query.
+  - **Assigning attributes and `#save`:** Manually assigning attribute values to an instance and then calling `#save` to persist changes.
+- **Deleting Records:**
+  - **`#destroy`:** Deleting a specific record from the database, triggering a `DELETE` SQL query.
+- **Validations:**
+  - Implementing data integrity rules (e.g., `validates :name, presence: true`) in the model.
+  - Understanding how Rails automatically runs validations on `create`, `update`, and `save` operations.
+  - Accessing validation errors via `#errors` and `#errors.full_messages` for user feedback.
+
+8. Core Rails request-response flow explanation that establishes the basic "request's journey" through a Rails applicationi and gives overview of **routes**, **controllers (with actions)**, and **views**.
+
+- **Routes:** Map incoming HTTP requests to specific controller actions.
+- **Controllers:** Ruby classes containing "actions" (public methods) that handle the request logic and prepare data.
+- **Views:** Templates (typically HTML and Ruby) responsible for presenting data in a desired format to the user.
+
 9. Routes
-   This lays the groundwork for building interactive web applications by establishing how user requests are received and processed within the Rails framework.
+   This section lays the groundwork for building interactive web applications by establishing how user requests are received and processed within the Rails framework.
 
 Summary:
 
