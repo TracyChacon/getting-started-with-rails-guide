@@ -4,8 +4,7 @@ Rails.application.routes.draw do
   root "products#index"
 
   Rails.application.routes.draw do
-    resources :products
-
+   resources :products
   end
 
   # Reveal health status on /up that returns 200 if the app boots with no exceptions, otherwise 500.
