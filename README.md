@@ -54,7 +54,6 @@ To get this project up and running locally, follow these steps:
 
 This repository documents my structured learning journey through the official Ruby on Rails "Getting Started" guide. I built a simple e-commerce application, named store, to gain practical experience with core Rails concepts, patterns, and development workflows. This project allowed me to solidify my understanding of web application development within the Rails framework, from initial setup to database interaction and routing.
 
-```md
 ## Challenges and Key Learnings
 
 ### Initial Language Barrier: Mastering Ruby Fundamentals
@@ -72,7 +71,6 @@ This proactive approach to understanding Ruby before diving deep into Rails sign
 ### Foundational Rails Concepts and Application Development
 
 My journey through the Rails guide provided a comprehensive understanding of the framework's architecture and practical application development.
-```
 
 ### Initial guide on getting started with Rails
 
