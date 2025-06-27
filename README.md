@@ -1,6 +1,6 @@
 # My Rails Tutorial Project
 
-This project is a result of following the official Ruby on Rails Guides tutorial. This repository tracks my progress through the official Ruby on Rails Guides tutorial, covering fundamental Rails concepts. [Here is a summary of what I learned.](#challeges_learning)
+This project is a result of following the official Ruby on Rails Guides tutorial. This repository tracks my progress through the official Ruby on Rails Guides tutorial, covering fundamental Rails concepts. [Click here for a summary of what I learned.](#challeges_learning)
 
 ## Technologies Used
 
@@ -88,7 +88,7 @@ The guide aims to teach:
 
 ### Lessons Learned in each section
 
-1. Introduction to the Rails guide
+1. **Introduction to the Rails guide**
 
 This section introduces the initial "Introduction" section for the Ruby on Rails
 guide.
@@ -102,7 +102,7 @@ It sets the stage by:
 - Providing links to the official Ruby website and a list of free programming
   books for further learning.
 
-2. Outline of Rails philosophy and guiding principles
+2. **Outline of Rails philosophy and guiding principles**
 
 This is a section detailing the core philosophy and guiding
 principles behind the Rails framework.
@@ -122,7 +122,7 @@ This section covers:
     sensible defaults and conventions, minimizing the need for
     extensive configuration.
 
-3. Initialize new Rails application and introduce core concepts
+3. **Initialize new Rails application and introduce core concepts**
 
 This section is about setting up the foundational `store` e-commerce application, outlining the prerequisites, creation process, directory structure, and the core
 Model-View-Controller (MVC) architecture of Rails.
@@ -143,7 +143,7 @@ This section covers:
   - **View:** Handles rendering responses (e.g., HTML, JSON).
   - **Controller:** Manages user interactions and request logic.
 
-4. Initial Rails server setup and verification
+4. **Initial Rails server setup and verification**
 
 My first interaction with the Rails application by
 booting up the Rails server and verifying its functionality.
@@ -164,9 +164,11 @@ This section covers:
 - Brief mention of Rails' naming conventions for automatic file loading,
   reducing the need for explicit `require` statements.
 
-5. I learned about the foundational `Product` model for the e-commerce
-   store, enabling the creation and management of product data in the database:
-   This section covers:
+5. **Creating a Database Model**
+
+I learned about the foundational `Product` model for the e-commerce
+store, enabling the creation and management of product data in the database:
+This section covers:
 
 - Generating a `Product` model with a `name:string` attribute using
   `bin/rails generate model Product name:string`.
@@ -187,7 +189,7 @@ This section covers:
   `bin/rails db:migrate` and explaining its output.
 - Briefly mentioning `bin/rails db:rollback` for undoing migrations.
 
-6. How to use the Rails console
+6. **How to use the Rails console**
    Shows how to interact with the application, specifically after creating the products table.
    This section covers:
 
@@ -196,7 +198,7 @@ This section covers:
 - Instructions on how to access the console via `bin/rails console`.
 - A practical example of using `Rails.version` to verify console functionality.
 
-7. Acitive Record Model Basics
+7. **Acitive Record Model Basics**
 
 This forms a critical part of a Rails application, enabling robust data management and interaction with the backend database and estblished the foundational knowledge of Rails Active Record models, which serve as the object-relational mapping (ORM) layer for interacting with the database. Key takeaways include:
 
@@ -221,14 +223,16 @@ This forms a critical part of a Rails application, enabling robust data manageme
   - Understanding how Rails automatically runs validations on `create`, `update`, and `save` operations.
   - Accessing validation errors via `#errors` and `#errors.full_messages` for user feedback.
 
-8. Core Rails request-response flow explanation that establishes the basic "request's journey" through a Rails application and gives overview of **routes**, **controllers (with actions)**, and **views**.
-   This section covers:
+8. **Requests**
+
+Core Rails request-response flow explanation that establishes the basic "request's journey" through a Rails application and gives overview of **routes**, **controllers (with actions)**, and **views**.
+This section covers:
 
 - **Routes:** Map incoming HTTP requests to specific controller actions.
 - **Controllers:** Ruby classes containing "actions" (public methods) that handle the request logic and prepare data.
 - **Views:** Templates (typically HTML and Ruby) responsible for presenting data in a desired format to the user.
 
-9. Routes
+9. **Routes**
    This section lays the groundwork for building interactive web applications by establishing how user requests are received and processed within the Rails framework.
 
 This section covers:
