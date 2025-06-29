@@ -232,34 +232,34 @@ The guide aims to teach:
 
 10. **Controllers & Actions** - This section introduces the full CRUD (Create, Read, Update, Delete) functionality for Products, leveraging Rails' conventions for controllers, views, and helpers.
 
-This section covers:
+    This section covers:
 
-- **ProductsController:**
+    - **ProductsController:**
 
-  - Generated `ProductsController` with `index` action (`bin/rails generate controller Products index --skip-routes`).
-  - Implemented `index` action to display all products (`@products = Product.all`).
-  - Implemented `show` action to display individual products (`@product = Product.find(params[:id])`).
-  - Implemented `new` and `create` actions for product creation, including `product_params` for strong parameters and error handling with `render :new, status: :unprocessable_entity`.
-  - Implemented `edit` and `update` actions for product modification, similarly handling strong parameters and errors.
-  - Implemented `destroy` action for product deletion.
-  - Utilized `before_action :set_product, only: %i[show edit update destroy]` to DRY up product fetching logic.
+      - Generated `ProductsController` with `index` action (`bin/rails generate controller Products index --skip-routes`).
+      - Implemented `index` action to display all products (`@products = Product.all`).
+      - Implemented `show` action to display individual products (`@product = Product.find(params[:id])`).
+      - Implemented `new` and `create` actions for product creation, including `product_params` for strong parameters and error handling with `render :new, status: :unprocessable_entity`.
+      - Implemented `edit` and `update` actions for product modification, similarly handling strong parameters and errors.
+      - Implemented `destroy` action for product deletion.
+      - Utilized `before_action :set_product, only: %i[show edit update destroy]` to DRY up product fetching logic.
 
-- **Views:**
+    - **Views:**
 
-  - Created `app/views/products/index.html.erb` to list products with links to show/new.
-  - Created `app/views/products/show.html.erb` to display individual product details with links to edit/back.
-  - Created `app/views/products/new.html.erb` for the new product form.
-  - Created `app/views/products/edit.html.erb` for the edit product form.
-  - Extracted the product form into a `_form.html.erb` partial for reuse in new and edit views.
-  - Used ERB tags (`<%= %>` for output, `<% %>` for execution) and Rails helpers (`link_to`, `form_with`, `button_to`, `debug`).
+      - Created `app/views/products/index.html.erb` to list products with links to show/new.
+      - Created `app/views/products/show.html.erb` to display individual product details with links to edit/back.
+      - Created `app/views/products/new.html.erb` for the new product form.
+      - Created `app/views/products/edit.html.erb` for the edit product form.
+      - Extracted the product form into a `_form.html.erb` partial for reuse in new and edit views.
+      - Used ERB tags (`<%= %>` for output, `<% %>` for execution) and Rails helpers (`link_to`, `form_with`, `button_to`, `debug`).
 
-- **Routing:**
+    - **Routing:**
 
-  - Set `root "products#index"` in `config/routes.rb` to make `/` display the product index.
+      - Set `root "products#index"` in `config/routes.rb` to make `/` display the product index.
 
-- **User Experience:**
-  - Incorporated `data-disable-with` on submit buttons for better UX during form submission.
-  - Added `data-turbo-confirm` for delete operations.
+    - **User Experience:**
+      - Incorporated `data-disable-with` on submit buttons for better UX during form submission.
+      - Added `data-turbo-confirm` for delete operations.
 
 ## Credits and Acknowledgements
 
