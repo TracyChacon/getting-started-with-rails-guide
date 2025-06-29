@@ -255,9 +255,7 @@ The guide aims to teach:
       - Incorporated `data-disable-with` on submit buttons for better UX during form submission.
       - Added `data-turbo-confirm` for delete operations.
 
-11. Basic user authentication
-
-This section introduces a basic authentication system to secure product management, leveraging Rails' built-in authentication generator.
+11. **Basic user authentication** - This section introduces a basic authentication system to secure product management, leveraging Rails' built-in authentication generator.
 
     Key ideas include:
 
