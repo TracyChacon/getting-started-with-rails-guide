@@ -255,6 +255,19 @@ The guide aims to teach:
       - Incorporated `data-disable-with` on submit buttons for better UX during form submission.
       - Added `data-turbo-confirm` for delete operations.
 
+11. Basic user authentication
+
+This section introduces a basic authentication system to secure product management, leveraging Rails' built-in authentication generator.
+
+    Key ideas include:
+
+    - Generated authentication boilerplate (`bin/rails generate authentication`) for `User` and `Session` models, along with their respective controllers and views.
+    - Migrated the database to create `users` and `sessions` tables (`bin/rails db:migrate`).
+    - Ensured `bcrypt` gem is included and functional for secure password hashing.
+    - Implemented a "Log out" button in the application layout, visible only when authenticated.
+    - Configured `ProductsController` to allow unauthenticated access to `index` and `show` actions (`allow_unauthenticated_access only: %i[index show]`).
+    - Dynamically displayed "New product," "Edit," and "Delete" links in product views only for authenticated users, enhancing security and user experience.
+
 ## Credits and Acknowledgements
 
 This project is based on and follows the official [Ruby on Rails Guides: Getting Started with Rails](https://guides.rubyonrails.org/getting_started.html) tutorial.
