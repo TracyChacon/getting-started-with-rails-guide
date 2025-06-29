@@ -60,13 +60,7 @@ This repository documents my structured learning journey through the official Ru
 
 My first significant challenge in this tutorial was immersing myself in the Ruby programming language. While I possess strong foundational knowledge in C, C++, Python, and JavaScript, grasping Ruby's distinct syntax and idiomatic expressions, especially when integrated with Rails, presented a fresh learning curve.
 
-To proactively address this, I undertook a dedicated preparatory phase:
-
-- I thoroughly consulted the [official Ruby Documentation](https://www.ruby-lang.org/en/documentation/) to grasp fundamental concepts.
-- I worked through the concise ["Ruby in Twenty Minutes"](https://www.ruby-lang.org/en/documentation/quickstart/) guide to build a foundational understanding.
-- I actively practiced Ruby exercises on [Exercism](https://exercism.org/tracks/ruby). This platform proved to be an engaging and effective way to reinforce my learning, building upon prior positive experiences with its interactive approach.
-
-This proactive approach to understanding Ruby before diving deep into Rails significantly smoothed the learning path for the framework itself.
+To prepare, I consulted the [official Ruby Documentation](https://www.ruby-lang.org/en/documentation/) and worked through the concise ["Ruby in Twenty Minutes"](https://www.ruby-lang.org/en/documentation/quickstart/) guide to build a foundational understanding of Ruby's core concepts; furthermore, I actively practiced Ruby exercises on [Exercism](https://exercism.org/tracks/ruby), leveraging its interactive approach to reinforce my learning. This proactive approach to understanding Ruby before diving deep into Rails significantly smoothed the learning path for the framework itself.
 
 ### Foundational Rails Concepts and Application Development
 
