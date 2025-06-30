@@ -266,6 +266,12 @@ The guide aims to teach:
     - Configured `ProductsController` to allow unauthenticated access to `index` and `show` actions (`allow_unauthenticated_access only: %i[index show]`).
     - Dynamically displayed "New product," "Edit," and "Delete" links in product views only for authenticated users, enhancing security and user experience.
 
+12. Caching Products - Implement product header caching for performance improvement. This section introduces caching for the product header in `app/views/products/show.html.erb` to improve page load performance.
+
+    By utilizing the `cache` helper with the `@product` object, Rails generates a unique cache key based on the product's `cache_key` and the template digest. This ensures that the header HTML is cached efficiently and re-rendered only when the product record is updated, preventing stale data.
+
+    Caching can be enabled in development by running `bin/rails dev:cache`. Server logs will show "Read fragment" when accessing cached content and "Write fragment" when content is initially cached. Subsequent requests for cached content will only show "Read fragment".
+
 ## Credits and Acknowledgements
 
 This project is based on and follows the official [Ruby on Rails Guides: Getting Started with Rails](https://guides.rubyonrails.org/getting_started.html) tutorial.
