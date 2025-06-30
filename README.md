@@ -268,9 +268,10 @@ The guide aims to teach:
 
 12. Caching Products - Implement product header caching for performance improvement. This section introduces caching for the product header in `app/views/products/show.html.erb` to improve page load performance.
 
-    By utilizing the `cache` helper with the `@product` object, Rails generates a unique cache key based on the product's `cache_key` and the template digest. This ensures that the header HTML is cached efficiently and re-rendered only when the product record is updated, preventing stale data.
-
-    Caching can be enabled in development by running `bin/rails dev:cache`. Server logs will show "Read fragment" when accessing cached content and "Write fragment" when content is initially cached. Subsequent requests for cached content will only show "Read fragment".
+    - Leverages Rails' **Solid Cache** to store HTML fragments.
+    - Utilizes the **`cache` helper with `@product`** to generate unique, dynamic cache keys. This ensures efficient caching and automatic invalidation of the cache when product records are updated, preventing stale data.
+    - **Enables caching in development** by running `bin/rails dev:cache`, allowing developers to observe caching behavior.
+    - **Provides clear log visibility**, showing "Read fragment" for cache hits and "Write fragment" for initial cache generation, aiding in debugging and monitoring.
 
 ## Credits and Acknowledgements
 
