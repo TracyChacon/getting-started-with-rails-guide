@@ -314,7 +314,7 @@ The guide aims to teach:
 
 16. Adding In Stock Notifications - Implement basic product inventory tracking
 
-    This commit introduces a foundational inventory tracking system for products, allowing for a numerical `inventory_count` to be managed.
+    This section introduces a foundational inventory tracking system for products, allowing for a numerical `inventory_count` to be managed.
 
     This is the first step towards implementing features like "in stock" notifications.
 
