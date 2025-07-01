@@ -285,6 +285,21 @@ The guide aims to teach:
     - **Controller Strong Parameters:** Modified `products_controller.rb` to permit the `:description` parameter.
     - **Show View Display:** Updated `app/views/products/show.html.erb` to render `@product.description`.
 
+14. File Uploads with Active Storage - Implement direct file uploads for product featured images with Active Storage
+
+    This section enhances product management by integrating Active Storage for direct file uploads, specifically for a featured image.
+
+    This builds upon the existing Active Text functionality, allowing for a dedicated featured image per product.
+
+    Users can now upload and display a dedicated featured image for each product, alongside the existing rich text capabilities.
+
+    Key changes include:
+
+    - **Product Model Update:** Added `has_one_attached :featured_image` to the `Product` model.
+    - **Form Integration:** Updated `app/views/products/_form.html.erb` to include a file upload field for `:featured_image`.
+    - **Controller Strong Parameters:** Modified `products_controller.rb` to permit the `:featured_image` parameter.
+    - **Show View Display:** Added logic to `app/views/products/show.html.erb` to display the featured image if attached.
+
 ## Credits and Acknowledgements
 
 This project is based on and follows the official [Ruby on Rails Guides: Getting Started with Rails](https://guides.rubyonrails.org/getting_started.html) tutorial.

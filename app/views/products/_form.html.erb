@@ -9,6 +9,10 @@
     <%= form.rich_text_area :description%>
   <br>
   <div>
+  <div>
+    <%= form.label :featured_image, style: "display: block" %>
+    <%= form.file_field :featured_image, accept: "image/*"%>
+  </div>
     <%= form.submit %>
   </div>
 <% end %>
