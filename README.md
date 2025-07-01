@@ -275,17 +275,15 @@ The guide aims to teach:
 
 13. Rich Text Fields with Action Text - Implement rich text description for products using Action Text
 
-This section introduces rich text capabilities for product descriptions using Rails Action Text.
+    This section introduces rich text capabilities for product descriptions using Rails Action Text. Users can now add and display rich text content, including formatting, for product descriptions.
 
-This section covers:
+    This section covers:
 
-- **Installation of Action Text:** Ran `bin/rails action_text:install`, `bundle install`, and `bin/rails db:migrate`.
-- **Product Model Update:** Added `has_rich_text :description` to the `Product` model.
-- **Form Integration:** Updated `app/views/products/_form.html.erb` to include `form.rich_text_area :description`.
-- **Controller Strong Parameters:** Modified `products_controller.rb` to permit the `:description` parameter.
-- **Show View Display:** Updated `app/views/products/show.html.erb` to render `@product.description`.
-
-Users can now add and display rich text content, including formatting, for product descriptions.
+    - **Installation of Action Text:** Ran `bin/rails action_text:install`, `bundle install`, and `bin/rails db:migrate`.
+    - **Product Model Update:** Added `has_rich_text :description` to the `Product` model.
+    - **Form Integration:** Updated `app/views/products/_form.html.erb` to include `form.rich_text_area :description`.
+    - **Controller Strong Parameters:** Modified `products_controller.rb` to permit the `:description` parameter.
+    - **Show View Display:** Updated `app/views/products/show.html.erb` to render `@product.description`.
 
 ## Credits and Acknowledgements
 
