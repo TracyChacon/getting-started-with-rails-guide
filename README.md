@@ -300,6 +300,18 @@ The guide aims to teach:
     - **Controller Strong Parameters:** Modified `products_controller.rb` to permit the `:featured_image` parameter.
     - **Show View Display:** Added logic to `app/views/products/show.html.erb` to display the featured image if attached.
 
+15. Internationalization (I18n) - Add internationalization (I18n) support for product listings
+
+    This section introduces basic internationalization capabilities to the application, specifically for the product index page, allowing content to be displayed in multiple languages.
+
+    Users can now view the product index in English or Spanish by appending `?locale=en` or `?locale=es` to the URL.
+
+    Key changes include:
+
+    - **Translation Helper Usage:** Updated `app/views/products/index.html.erb` to use the `t` helper for the page title (`<%= t ".title" %>`).
+    - **Locale Files:** Created `config/locales/es.yml` for Spanish translations and updated `config/locales/en.yml` with "products.index.title" keys.
+    - **Locale Switching:** Implemented an `around_action` in `app/controllers/application_controller.rb` to switch the locale based on a `locale` URL parameter, with a fallback to the default locale.
+
 ## Credits and Acknowledgements
 
 This project is based on and follows the official [Ruby on Rails Guides: Getting Started with Rails](https://guides.rubyonrails.org/getting_started.html) tutorial.
