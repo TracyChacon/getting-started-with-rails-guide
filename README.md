@@ -273,6 +273,20 @@ The guide aims to teach:
     - **Enables caching in development** by running `bin/rails dev:cache`, allowing developers to observe caching behavior.
     - **Provides clear log visibility**, showing "Read fragment" for cache hits and "Write fragment" for initial cache generation, aiding in debugging and monitoring.
 
+13. Rich Text Fields with Action Text - Implement rich text description for products using Action Text
+
+This section introduces rich text capabilities for product descriptions using Rails Action Text.
+
+This section covers:
+
+- **Installation of Action Text:** Ran `bin/rails action_text:install`, `bundle install`, and `bin/rails db:migrate`.
+- **Product Model Update:** Added `has_rich_text :description` to the `Product` model.
+- **Form Integration:** Updated `app/views/products/_form.html.erb` to include `form.rich_text_area :description`.
+- **Controller Strong Parameters:** Modified `products_controller.rb` to permit the `:description` parameter.
+- **Show View Display:** Updated `app/views/products/show.html.erb` to render `@product.description`.
+
+Users can now add and display rich text content, including formatting, for product descriptions.
+
 ## Credits and Acknowledgements
 
 This project is based on and follows the official [Ruby on Rails Guides: Getting Started with Rails](https://guides.rubyonrails.org/getting_started.html) tutorial.

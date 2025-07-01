@@ -44,8 +44,8 @@ class ProductsController < ApplicationController
     def set_product
       @product = Product.find(params[:id])
     end
-
+     # Only allow a list of trusted parameters through.
     def product_params
-      params.expect(product: [ :name ])
+      params.expect(product: [ :name, :description ])
     end
 end

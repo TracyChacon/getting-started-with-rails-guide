@@ -1,5 +1,6 @@
 <% cache @product do %>
   <h1> <%= @product.name %>
+  <%= @product.description %>
 <% end %>
 
 <%= link_to "Back", products_path %>
