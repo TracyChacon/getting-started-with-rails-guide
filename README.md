@@ -293,7 +293,7 @@ The guide aims to teach:
 
     Users can now upload and display a dedicated featured image for each product, alongside the existing rich text capabilities.
 
-    Key changes include:
+    This section covers:
 
     - **Product Model Update:** Added `has_one_attached :featured_image` to the `Product` model.
     - **Form Integration:** Updated `app/views/products/_form.html.erb` to include a file upload field for `:featured_image`.
@@ -306,11 +306,26 @@ The guide aims to teach:
 
     Users can now view the product index in English or Spanish by appending `?locale=en` or `?locale=es` to the URL.
 
-    Key changes include:
+    This section covers:
 
     - **Translation Helper Usage:** Updated `app/views/products/index.html.erb` to use the `t` helper for the page title (`<%= t ".title" %>`).
     - **Locale Files:** Created `config/locales/es.yml` for Spanish translations and updated `config/locales/en.yml` with "products.index.title" keys.
     - **Locale Switching:** Implemented an `around_action` in `app/controllers/application_controller.rb` to switch the locale based on a `locale` URL parameter, with a fallback to the default locale.
+
+16. Adding In Stock Notifications - Implement basic product inventory tracking
+
+    This commit introduces a foundational inventory tracking system for products, allowing for a numerical `inventory_count` to be managed.
+
+    This is the first step towards implementing features like "in stock" notifications.
+
+    These changes enable the tracking and management of product stock levels within the application.
+
+    This section covers:
+
+    - **Database Migration:** Generated and ran a migration to add an `inventory_count:integer` column to the `products` table.
+    - **Form Integration:** Added a number field for `inventory_count` to `app/views/products/_form.html.erb`.
+    - **Controller Strong Parameters:** Updated `products_controller.rb` to permit the `:inventory_count` parameter.
+    - **Model Validation:** Added a `numericality` validation to the `Product` model, ensuring `inventory_count` is `greater_than_or_equal_to: 0`.
 
 ## Credits and Acknowledgements
 
